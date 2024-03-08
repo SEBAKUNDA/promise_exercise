@@ -5,11 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="style.css">
 </head>
-<body >
-    <div class="bg-red-400">
-        hkjvsadcadgvshjdhasvj,vjHVD
+<body class="flex items-center justify-center bg-black h-screen">
+    <div class="bg-gradient-to-br from-green-400 to-indigo-500 text-white w-[300px] flex flex-col items-center justify-center p-8 rounded-xl ">
+        <div class="mb-4">
+            <input type="text"  class="w-[200px] h-[30px] rounded-2xl text-black searchBox" placeholder="    Enter city here">
+            <button class="bg-white w-[30px] h-[30px] rounded-full text-black searchBtn" >
+                <ion-icon name="search-outline"></ion-icon>
+            </button>
+        </div>
+        <div class=" error ">
+            <p> Invalid city</p>
+        </div>
+        <div class="weather">
+        <div class="text-center text-4xl ">
+            <img  class=" weather-icon " src="clouds.png" alt="" srcset="" >
+            <h1 class="degree">22°c</h1>
+            <p class="city">London</p>
+        </div>
+        <div class="flex justify-between w-full mt-12">
+            <div class="flex items-center ml-8">
+                <div class="w-[20px] h-[20px]">
+                    <img src="humidity.png" alt="" srcset="">
+                </div>
+                <div class="ml-4">
+                    <p class="temp">35%</p>
+                    <p class="hum">Humidity</p>
+                </div>
+            </div>
+            <div class="flex items-center mr-8">
+                <div class="w-[20px] h-[20px]">
+                    <img src="wind.png" alt="" srcset="">
+                </div>
+                <div class="ml-4">
+                    <img src="" alt="" srcset="">
+                    <p class="speed">15 km/h</p>
+                    <p class="wind">Wind speed</p>
+                </div>
+            </div>
+        </div>
     </div>
-  
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
